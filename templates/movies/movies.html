@@ -13,5 +13,12 @@
     <p>{{i.description}}</p>
     <a href="/movies/{{i.id}}">Подробнее</a>
 {% endfor %}
+<hr>
+    <h3>Комментарии</h3>
+    {% for i in form %}
+    <p>{{i.text}}</p>
+    <p>{{i.stars}}</p>
+<br>
+{% endfor %}
 </body>
 </html>

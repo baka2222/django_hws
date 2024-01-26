@@ -18,3 +18,20 @@ class Movie(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Reviews(models.Model):
+    RATE_LIST = [
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+        ('5', '5')
+    ]
+    text = models.TextField(max_length=300, verbose_name='Впечатления')
+    stars = models.CharField(choices=RATE_LIST,
+                             verbose_name='Оценка фильма',
+                             max_length=40)
+
+    def __str__(self):
+        return self.text
