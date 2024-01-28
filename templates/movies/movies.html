@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Movies</title>
-</head>
 <body>
+{% include 'header.html' %}
+<br><br>
+<div class="contentt">
 <h1>Movie list</h1>
 <h3>------------------------------------------</h3>
 {% for i in movies %}
     <img src="{{i.image.url}}" alt="img" height="400" width="600">
     <h2>{{i.title}}</h2>
-    <p>{{i.description}}</p>
-    <a href="/movies/{{i.id}}">Подробнее</a>
+    <p style="text-align: justify">{{i.description}}</p>
+    <a href="/movies/{{i.id}}">Подробнее</a><br><br><br>
 {% endfor %}
 <hr>
     <h3>Комментарии</h3>
@@ -20,5 +17,7 @@
     <p>{{i.stars}}</p>
 <br>
 {% endfor %}
+</div>
+{% include 'footer.html' %}
 </body>
 </html>

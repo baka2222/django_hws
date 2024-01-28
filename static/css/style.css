@@ -1,0 +1,29 @@
+.contentt {
+    justify-content: center;
+    text-align: center;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+
+.gray {
+    background-color: gray;
+}
+
+a.nav-link {
+    color: black;
+}

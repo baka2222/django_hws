@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Books</title>
-</head>
+{% include 'header.html' %}
 <body>
+<br><br>
+<div class="contentt">
 {% for i in info %}
 <h1>{{i.name}}</h1>
 <p>{{i.description}}</p>
-<img src='{{i.photo.url}}' alt="">
+<img width="700px" src='{{i.photo.url}}' alt="">
 <p>{{i.price}}</p>
 <p>{{i.date_creating}}</p>
 {% endfor %}
+</div>
+{% include 'footer.html' %}
 </body>
 </html>
