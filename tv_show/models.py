@@ -20,7 +20,7 @@ class Movie(models.Model):
         return self.title
 
 
-class Reviews(models.Model):
+class Review(models.Model):
     RATE_LIST = [
         ('1', '1'),
         ('2', '2'),
@@ -28,10 +28,11 @@ class Reviews(models.Model):
         ('4', '4'),
         ('5', '5')
     ]
+
+    film = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='reviews')
     text = models.TextField(max_length=300, verbose_name='Впечатления')
     stars = models.CharField(choices=RATE_LIST,
                              verbose_name='Оценка фильма',
                              max_length=40)
-
     def __str__(self):
-        return self.text
+        return self.movie
