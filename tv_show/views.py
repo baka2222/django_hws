@@ -93,6 +93,8 @@ class SearchView(generic.ListView):
     template_name = 'movies/movies.html'
     paginate_by = 5
 
+    #тут чуть chat gpt подсказал, но проблема состояла в другом (в бд), но до его помощи этот класс тоже работал
+    
     def get_queryset(self):
         query = self.request.GET.get('q', '')
         print(f"Query: {query}")
