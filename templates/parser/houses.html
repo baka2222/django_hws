@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+<body>
+<br><br>
+<!--Если что класс contentt содержит стили для централизации-->
+<div class="contentt">
+    {% for i in houses %}
+    <p>{{i.title}}</p>
+    <p>{{i.price}}</p>
+    <img src="{{i.img}}" alt="" style="width: 500px">
+    <p>Локация: {{i.location}}</p>
+    <hr>
+    {% endfor %}
+</div>
+{% include 'footer.html' %}
+</body>
+</html>

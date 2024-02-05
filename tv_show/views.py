@@ -27,6 +27,7 @@ class MovieListView(generic.ListView):
         context['movie_comments_count'] = movie_comments_count
         return context
 
+
 class MovieDetailMovie(generic.DetailView):
     model = Movie
     template_name = 'movies/movies_detail.html'

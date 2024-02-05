@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+<body>
+<br><br>
+<div class="contentt">
+<form method="post" style="margin-bottom: 400px; margin-top: 65px">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Выполнить парсинг</button>
+</form>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>
