@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'tv_show',
-    'parser_app'
+    'parser_app',
+    'accounts_app'
 ]
 
 MIDDLEWARE = [

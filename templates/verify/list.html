@@ -1,0 +1,17 @@
+{% include 'header.html' %}
+</head>
+<body>
+<br><br><br>
+<div class="contentt">
+    {% if acc %}
+    {% for i in acc %}
+    <p>{{i.username}}</p>
+    <p>{{i.bio}}</p>
+    {% endfor %}
+    {% else %}
+    <h1>Пока ничего нет</h1>
+    {% endif %}
+</div>
+{% include 'footer.html' %}
+</body>
+</html>
