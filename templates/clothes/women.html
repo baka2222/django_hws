@@ -1,0 +1,12 @@
+{% include 'header.html' %}
+<body>
+<br><br><br><br>
+<div class="contentt">
+    {% for i in clothes %}
+    <p>{{ i.title }}</p>
+    <hr>
+    {% endfor %}
+</div>
+{% include 'footer.html' %}
+</body>
+</html>

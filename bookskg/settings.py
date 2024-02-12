@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'home',
     'tv_show',
     'parser_app',
-    'accounts_app'
+    'accounts_app',
+    'clothes_app'
 ]
 
 MIDDLEWARE = [
